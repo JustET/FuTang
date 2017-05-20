@@ -1,0 +1,169 @@
+
+/*共同样式*/
+
+body{
+	font-family: "Microsoft YaHei",sans-serif;
+}
+
+.navbar {
+    min-height: 0px; 
+    display: block ;
+}
+
+.navbar-default{
+	background-color: rgb(119,198,192);
+	border-color:transparent;
+	border-radius: 0;
+}
+.navbar-default .navbar-brand {
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #40D2B1;
+    background-color: rgb(69, 210, 184);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1C9982;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #F9F6F6;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color:white;
+}
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+
+.obanner{
+	margin-top:100px;
+}
+
+.other_banner{
+	height:375px;
+	width:100%;
+	overflow: hidden;
+}
+
+.li_active{
+	border-bottom: 2px solid white;
+}
+.li_active >a {
+	color:white!important;
+}
+
+.footer{
+	width:100%;
+	height:auto;
+	background-color: rgb(119,198,192);
+	padding:50px 0px;
+	text-align: center;
+}
+.footer h1{
+	color: white;
+	font-weight: bolder;
+}
+.footer div{
+	padding:10px 0;
+}
+.footer div>span{
+	margin:0 15px;
+	color: white;
+}
+
+
+.footer div span a {
+	text-decoration: none;
+	color:white;
+	transition: color .35s ease;
+	-webkit-transition: color .35s ease;
+	-ms-transition: color .35s ease;
+}
+
+.back_up{
+	width:40px;
+	height:45px;
+	overflow: hidden;
+	background: rgb(13, 152, 142);
+	position: fixed;
+	right:20px;
+	bottom: 50px;
+	border-radius:2px;
+	color:white;
+	text-align: center;
+	line-height: 45px;
+	transition: all 0.35s ease;
+	-webkit-transition: all 0.35s ease;
+	-ms-transition: all 0.35s ease;
+	-o-transition: all 0.35s ease;
+	cursor: pointer;
+	display: none;
+}
+
+.back_up span{
+	font-size: 18px;
+	transition: all 0.15s ease;
+	transform: translateY(5px);
+}
+.back_up:hover span{
+	transform: translateY(0px);
+}
+
+
+@media screen and (max-width:767px){
+	.massge span{
+		display: none;
+	}
+
+	.footer{
+		padding:15px 0;
+	}
+
+	.other_banner{
+		height:auto;
+	}
+
+	.obanner{
+		margin-top:50px;
+	}
+
+	.news_head{
+		padding-bottom: 0;
+	}
+}
+
+@media (min-width: 768px){
+	.navbar-brand{
+		height:100px;
+		line-height:70px;
+		font-size: 35px;
+	}
+	.navbar-right {
+	    height: 100px;
+	    line-height: 100px;
+	}
+	.navbar-nav > li {
+	    margin-top: 25px;
+	    margin-right: 15px;
+	    margin-left: 15px;
+	    transition: all .15s ease;
+	}
+	.navbar-nav>li>a{
+		font-size: 16px;
+	}
+	.navbar-nav > li:hover{
+		color:white;
+		border-bottom: 2px solid white;
+	}
+}
